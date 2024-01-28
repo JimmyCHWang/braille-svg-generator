@@ -46,9 +46,9 @@ for combination in combination_lists:
     with open(f"svgs/dot-{name}.svg", "w") as f:
         f.write(svg_head)
         for dot_id in range(1, 7):
-            dot_x = (half_width - dot_diameter) if dot_id <= 3 else (half_width + half_diameter)
-            dot_y = (half_height - 1.5 * dot_diameter) if dot_id % 3 == 1 else (
-                (half_height + 1.5 * dot_diameter) if dot_id % 3 == 0 else half_height
+            dot_x = (half_width - dot_diameter) if dot_id <= 3 else (half_width + dot_diameter)
+            dot_y = (half_height - 2 * dot_diameter) if dot_id % 3 == 1 else (
+                (half_height + 2 * dot_diameter) if dot_id % 3 == 0 else half_height
             )
             if str(dot_id) in combination:
                 f.write(svg_black_dot_template_str.format(dot_x, dot_y, half_diameter))
