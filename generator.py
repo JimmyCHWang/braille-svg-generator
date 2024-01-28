@@ -43,7 +43,7 @@ for combination in combination_lists:
     name = ''.join(combination)
     if len(name) == 0:
         name = '0'
-    with open(f"svgs/dot-{name}.svg", "w") as f:
+    with open(f"svgs/dots-{name}.svg", "w") as f:
         f.write(svg_head)
         for dot_id in range(1, 7):
             dot_x = (half_width - dot_diameter) if dot_id <= 3 else (half_width + dot_diameter)
