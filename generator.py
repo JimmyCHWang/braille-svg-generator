@@ -6,9 +6,7 @@ svg_width = 154
 svg_height = 216
 dot_diameter = 30
 
-svg_head = f"""
-<svg width="{svg_width}" height="{svg_height}" xmlns="http://www.w3.org/2000/svg">
-"""
+svg_head = f'<svg width="{svg_width}" height="{svg_height}" xmlns="http://www.w3.org/2000/svg">'
 
 svg_tail = "</svg>"
 
